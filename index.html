@@ -16,12 +16,15 @@
     
 
     <script>
-        new Vue({
+        const vm = new Vue({
             el: '#app',
             data: {
                 message: '123'
             }
         })
+        vm.message='321'
+        //要用到vm的屬性時變數名稱前面要+$
+        vm.$data.message='333'
     </script>
 </body>
 </html>
